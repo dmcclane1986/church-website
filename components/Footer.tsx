@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ServiceTimes } from "./ServiceTimes";
-import { Mail, Facebook, MapPin } from "lucide-react";
+import { Mail, Facebook, MapPin, Youtube } from "lucide-react";
 
 export function Footer() {
   return (
@@ -30,6 +30,17 @@ export function Footer() {
                 >
                   <Facebook className="h-4 w-4 shrink-0" aria-hidden />
                   Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@libertybaptistpb"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-2 text-navy-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-navy-900 rounded"
+                >
+                  <Youtube className="h-4 w-4 shrink-0" aria-hidden />
+                  YouTube
                 </a>
               </li>
               <li>

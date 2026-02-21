@@ -6,8 +6,7 @@ import { useState } from "react";
 import { MapPin, Clock } from "lucide-react";
 
 const HERO_IMAGES = [
-  "/assets/Liberty%20Baptist%20Church.jpg",
-  "/assets/liberty-baptist-church.jpg",
+  "/assets/liberty-church.png",
 ];
 
 export default function HomePage() {
@@ -25,7 +24,7 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col">
-      {/* Hero — put your image at public/assets/liberty-baptist-church.jpg */}
+      {/* Hero — using liberty-church.png */}
       <section
         aria-label="Hero"
         className={`relative min-h-[55vh] w-full overflow-hidden ${heroImageError ? "bg-gray-200" : "bg-navy-900"}`}
@@ -35,7 +34,7 @@ export default function HomePage() {
             src={currentHeroSrc}
             alt="Liberty Baptist Church"
             fill
-            className="object-cover object-center"
+            className="object-cover object-[center_45%]"
             sizes="100vw"
             priority
             unoptimized
@@ -55,7 +54,7 @@ export default function HomePage() {
 
           {heroImageError && (
             <p className="mb-3 text-sm text-amber-800 bg-amber-100 rounded px-3 py-2 max-w-md">
-              Hero image didn’t load. Add <strong>Liberty Baptist Church.jpg</strong> (or <strong>liberty-baptist-church.jpg</strong>) to the folder <strong>public/assets</strong>.
+              Hero image didn't load. Add <strong>liberty-church.png</strong> to the folder <strong>public/assets</strong>.
             </p>
           )}
 
